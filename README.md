@@ -1,17 +1,12 @@
 ## Kampüs Sosyal – React Native Projesi
 ## Kopyalamayınız
 Görseller:
-<img width="620" height="989" alt="Ekran görüntüsü 2025-12-03 150622" src="https://github.com/user-attachments/assets/660e0f7d-1460-4f9f-b3f0-ef184a95c794" />
-<img width="618" height="974" alt="Ekran görüntüsü 2025-12-03 150654" src="https://github.com/user-attachments/assets/2b271cad-f253-443c-8777-8ea8ca2b656e" />
-<img width="647" height="982" alt="Ekran görüntüsü 2025-12-03 150704" src="https://github.com/user-attachments/assets/d36b6e25-9f79-4e22-93fb-60c11b547dc3" />
-<img width="608" height="982" alt="Ekran görüntüsü 2025-12-03 150715" src="https://github.com/user-attachments/assets/facb51e8-f3ff-4b1e-9751-bf6ad83ff3e1" />
-<img width="597" height="983" alt="Ekran görüntüsü 2025-12-03 150741" src="https://github.com/user-attachments/assets/9b5237a7-d2ff-40be-8333-624cfbf7c42d" />
-<img width="595" height="978" alt="Ekran görüntüsü 2025-12-03 150753" src="https://github.com/user-attachments/assets/180cca2f-4a43-446d-8de5-0fb852ba31dd" />
-<img width="1427" height="1003" alt="Ekran görüntüsü 2025-12-03 150912" src="https://github.com/user-attachments/assets/866f1623-bc97-49d1-b976-04851631687f" />
-<img width="1363" height="857" alt="Ekran görüntüsü 2025-12-03 151103" src="https://github.com/user-attachments/assets/a0a90d8e-6d5a-4968-80da-53f1c9a2aa17" />
-<img width="1579" height="665" alt="Ekran görüntüsü 2025-12-03 151629" src="https://github.com/user-attachments/assets/4f732141-e41a-4cdd-b26d-4fce751e11f5" />
-<img width="1719" height="760" alt="Ekran görüntüsü 2025-12-03 151741" src="https://github.com/user-attachments/assets/728d60a3-3f9b-4340-a08b-1bff278b6798" />
-<img width="1283" height="971" alt="Ekran görüntüsü 2025-12-03 151453" src="https://github.com/user-attachments/assets/4ff0c665-dfc3-4265-9b87-e906c13b2526" />
+
+<img width="300" alt="Giriş Ekranı" src="assets/screenshot_1.jpg" />
+<img width="300" alt="Kod Görünümü 1" src="assets/screenshot_2.jpg" />
+<img width="300" alt="Kod Görünümü 2" src="assets/screenshot_3.jpg" />
+<img width="300" alt="Kod Görünümü 3" src="assets/screenshot_4.jpg" />
+<img width="300" alt="Ana Ekran" src="assets/screenshot_5.jpg" />
 
 Bu proje, React Native kullanılarak geliştirilmiş basit bir **Kampüs Sosyal** uygulaması iskeletidir.  
 Ödev kapsamında şu özellikler uygulanmıştır:
