@@ -1,4 +1,4 @@
-## KampusPost – React Native Projesi
+## Kampüs Sosyal – React Native Projesi
 ## Kopyalamayınız
 Görseller:
 <img width="620" height="989" alt="Ekran görüntüsü 2025-12-03 150622" src="https://github.com/user-attachments/assets/660e0f7d-1460-4f9f-b3f0-ef184a95c794" />
@@ -13,7 +13,7 @@ Görseller:
 <img width="1719" height="760" alt="Ekran görüntüsü 2025-12-03 151741" src="https://github.com/user-attachments/assets/728d60a3-3f9b-4340-a08b-1bff278b6798" />
 <img width="1283" height="971" alt="Ekran görüntüsü 2025-12-03 151453" src="https://github.com/user-attachments/assets/4ff0c665-dfc3-4265-9b87-e906c13b2526" />
 
-Bu proje, React Native kullanılarak geliştirilmiş basit bir **KampusPost** uygulaması iskeletidir.  
+Bu proje, React Native kullanılarak geliştirilmiş basit bir **Kampüs Sosyal** uygulaması iskeletidir.  
 Ödev kapsamında şu özellikler uygulanmıştır:
 
 - **Giriş ekranı (`LoginScreen`)** – E‑posta, şifre alanları ve “Giriş Yap / Kayıt Ol” butonları
@@ -27,7 +27,7 @@ Bu proje, React Native kullanılarak geliştirilmiş basit bir **KampusPost** uy
 Terminalde proje klasörüne girin:
 
 ```sh
-cd KampusPost
+cd KampusPost2-main
 ```
 
 Metro (React Native dev server) başlatın:
@@ -54,8 +54,8 @@ npm run android
   Açılış ekranı **LoginScreen**’dir (`initialRouteName="Login"`).
 
 - **LoginScreen**  
-  - Üst yazı: **“KampüsPost’a Hoş Geldiniz!”**  
-  - Başlık: **“Giriş Yap”**  
+  - Üst yazı: **“Kampüs Sosyal'e Hoş Geldin!”**  
+  - Başlık: **“Hesabına Gir”**  
   - Alanlar: E‑posta, Şifre (`CustomInput` bileşeni ile)  
   - Butonlar:
     - **“Giriş Yap”** → şimdilik doğrulama yapmadan **HomeScreen**’e yönlendirir.
@@ -63,21 +63,21 @@ npm run android
 
 - **RegisterScreen**  
   - Alanlar: E‑posta, Şifre, Şifre Tekrar (tamamı `CustomInput` kullanır).  
-  - **“Kayıt Ol”** butonu:
-    - Şifreler uyuşmazsa: `Alert.alert("Hata", "Şifreler uyuşmuyor!")`
+  - **“Hesap Oluştur”** butonu:
+    - Şifreler uyuşmazsa: `Alert.alert("Dikkat", "Girdiğiniz parolalar eşleşmiyor, lütfen kontrol ediniz.")`
     - Şifreler aynıysa:
-      - `console.log("Kayıt başarılı", { email })`
-      - `Alert.alert("Başarılı", "Kayıt başarılı! Giriş yapabilirsiniz.")`
+      - `console.log("Kayıt işlemi tamamlandı", { email })`
+      - `Alert.alert("Kayıt Tamamlandı", "Hesabınız oluşturuldu. Şimdi giriş yapabilirsiniz.")`
       - Ardından **LoginScreen**’e geri yönlendirir.
 
 - **HomeScreen**  
   - `useEffect` ile `https://jsonplaceholder.typicode.com/posts` adresinden veri çeker.  
-  - Gelen veriyi `Post[]` tipinde state’e kaydeder ve konsola `Posts verisi:` olarak yazdırır.  
+  - Gelen veriyi `Post[]` tipinde state’e kaydeder ve konsola `Akış verisi:` olarak yazdırır.  
   - `FlatList` ile her post için:
     - Başlık (`title`) → kalın/büyük
     - İçerik (`body`) → altında normal metin şeklinde gösterilir.  
   - Veri yüklenirken:
-    - Ortada spinner ve **“Yükleniyor…”** metni görünür.
+    - Ortada spinner ve **“Veriler getiriliyor, lütfen bekleyin...”** metni görünür.
 
 ## Proje Klasör Yapısı
 
@@ -156,17 +156,18 @@ KampusPost/
   `App.tsx` içindeki `NavigationContainer` + `Stack.Navigator` kodunun ekran görüntüsü.
 
 - **Giriş ekranı**  
-  `KampüsPost’a Hoş Geldiniz!` üst yazısı, `Giriş Yap` başlığı, e‑posta / şifre alanları ve  
+  `Kampüs Sosyal'e Hoş Geldin!` üst yazısı, `Hesabına Gir` başlığı, e‑posta / şifre alanları ve  
   **“Giriş Yap” / “Kayıt Ol”** butonlarının göründüğü ekran.
 
 - **Kayıt ekranı**  
-  E‑posta, Şifre, Şifre Tekrar alanları ve **“Kayıt Ol”** butonunun göründüğü ekran.  
+  E‑posta, Şifre, Şifre Tekrar alanları ve **“Hesap Oluştur”** butonunun göründüğü ekran.  
   Şifreler uyuşmadığında çıkan **Alert** penceresinin ekran görüntüsü.  
-  Şifreler uyduğunda konsolda görünen **“Kayıt başarılı”** logunun ekran görüntüsü.
+  Şifreler uyduğunda konsolda görünen **“Kayıt işlemi tamamlandı”** logunun ekran görüntüsü.
 
 - **HomeScreen ve veri çekme**  
-  - `Posts verisi:` log’unun göründüğü **DevTools Console** veya terminal ekranı.  
+  - `Akış verisi:` log’unun göründüğü **DevTools Console** veya terminal ekranı.  
   - `FlatList` ile post’ların listelendiği HomeScreen ekran görüntüsü.  
-  - Varsa **“Yükleniyor…”** metninin göründüğü anın ekran görüntüsü.
+  - Varsa **“Veriler getiriliyor, lütfen bekleyin...”** metninin göründüğü anın ekran görüntüsü.
+
 
 
