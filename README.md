@@ -7,6 +7,9 @@ Görseller:
 <img width="300" alt="Kod Görünümü 2" src="assets/screenshot_3.jpg" />
 <img width="300" alt="Kod Görünümü 3" src="assets/screenshot_4.jpg" />
 <img width="300" alt="Ana Ekran" src="assets/screenshot_5.jpg" />
+<img width="300" alt="Ekran 6" src="assets/screenshot_6.jpg" />
+<img width="300" alt="Ekran 7" src="assets/screenshot_7.jpg" />
+<img width="300" alt="Ekran 8" src="assets/screenshot_8.jpg" />
 
 Bu proje, React Native kullanılarak geliştirilmiş basit bir **Kampüs Sosyal** uygulaması iskeletidir.  
 Ödev kapsamında şu özellikler uygulanmıştır:
